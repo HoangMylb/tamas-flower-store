@@ -24,8 +24,8 @@ export const homePageType = defineType({
         name: "homeCategoryTile",
         title: "Danh mục trang chủ",
         fields: [
-          defineField({name: "category", title: "Danh mục", type: "string", options: {list: categoryOptions, layout: "dropdown"}, validation: rule => rule.required()}),
-          defineField({name: "title", title: "Tên hiển thị", type: "string", validation: rule => rule.required()}),
+          defineField({name: "category", title: "Danh mục", type: "string", options: {list: categoryOptions, layout: "dropdown"}, validation: rule => rule.required(), readOnly: true}),
+          defineField({name: "title", title: "Tên hiển thị", type: "string", validation: rule => rule.required(), readOnly: true}),
           defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, validation: rule => rule.required()}),
         ],
         preview: {select: {title: "title", subtitle: "category", media: "image"}},
@@ -49,12 +49,14 @@ export const homePageType = defineType({
             to: [{type: "product"}],
             options: {filter: "active == true", disableNew: true},
             validation: rule => rule.required(),
+            readOnly: true,
           }),
           defineField({
             name: "titleOverride",
             title: "Tên chỉ dùng ở trang chủ",
             description: "Để trống để dùng tên của sản phẩm gốc.",
             type: "string",
+            readOnly: true,
           }),
           defineField({
             name: "imageOverride",
@@ -82,7 +84,7 @@ export const homePageType = defineType({
         title: "Ảnh Instagram",
         fields: [
           defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, validation: rule => rule.required()}),
-          defineField({name: "alt", title: "Mô tả ảnh", type: "string", description: "Dùng cho người đọc màn hình.", validation: rule => rule.required()}),
+          defineField({name: "alt", title: "Mô tả ảnh", type: "string", description: "Dùng cho người đọc màn hình.", validation: rule => rule.required(), readOnly: true}),
         ],
         preview: {select: {title: "alt", media: "image"}},
       }],

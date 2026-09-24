@@ -1,5 +1,20 @@
-import type {Metadata} from "next"; import Link from "next/link"; import {redirect} from "next/navigation"; import {PageShell} from "@/components/PageShell"; import {ProductCard} from "@/components/ProductCard"; import {categories} from "@/data/categories"; import {getActiveProducts} from "@/sanity/products"; import {occasionGuides} from "@/data/occasion-guides"; import styles from "./catalog.module.css";
-export const metadata:Metadata={title:"Hoa",description:"Khám phá các mẫu hoa tươi, hoa sáp, hoa len, flower box và hoa cưới của Tamas.",alternates:{canonical:"/san-pham"}};
-export const revalidate = 3600; const pageSize=8; type Query={category?:string;occasion?:string;q?:string;page?:string};
-const href=(query:Query)=>{const p=new URLSearchParams();if(query.category)p.set("category",query.category);if(query.q)p.set("q",query.q);if(query.page&&query.page!=="1")p.set("page",query.page);return p.size?`/san-pham?${p}`:"/san-pham"};
-export default async function ProductListing({searchParams}:{searchParams:Promise<Query>}){const q=await searchParams;if(q.occasion){const guide=occasionGuides.find(item=>item.occasion===q.occasion);if(guide)redirect(`/dip-tang/${guide.slug}`)}const needle=q.q?.trim().toLocaleLowerCase("vi-VN")??"";const products=await getActiveProducts();const matches=products.filter(p=>(!q.category||p.category===q.category)&&(!needle||`${p.name} ${p.shortDescription} ${p.colors.join(" ")} ${p.occasions.join(" ")}`.toLocaleLowerCase("vi-VN").includes(needle)));const pages=Math.max(1,Math.ceil(matches.length/pageSize));const page=Math.min(Math.max(1,Number(q.page??"1")||1),pages);const items=matches.slice((page-1)*pageSize,page*pageSize);const pageHref=(target:number)=>href({...q,page:String(target)});return <PageShell><section className="listing-head"><p className="location">Danh mục hoa</p><h1>Chọn một mẫu, rồi để Tamas chuẩn bị phần còn lại.</h1><p>Mỗi mẫu có thể được điều chỉnh theo sắc hoa, dịp tặng và ngân sách của bạn.</p></section><section className="listing section"><form className="catalog-search" action="/san-pham" role="search"><input type="search" name="q" defaultValue={q.q} placeholder="Tìm tên hoa, màu sắc hoặc dịp tặng" aria-label="Tìm sản phẩm"/>{q.category&&<input type="hidden" name="category" value={q.category}/>}<button type="submit">Tìm hoa</button></form><div className="filters"><Link href={href({q:q.q})} className={!q.category?"active":""}>Tất cả</Link>{categories.map(c=><Link href={href({category:c.slug,q:q.q})} className={q.category===c.slug?"active":""} key={c.slug}>{c.name}</Link>)}</div><p className="catalog-count">{matches.length} mẫu phù hợp{needle?` với “${q.q}”`:""}</p><div className={`product-grid ${styles.grid}`}>{items.map(p=><ProductCard product={p} key={p.slug}/>)}</div>{!items.length&&<p className="empty">Chưa có mẫu khớp từ khoá này. Hãy thử tên hoa, màu sắc khác hoặc nhắn shop để được tư vấn nhanh.</p>}{pages>1&&<nav className="pagination" aria-label="Phân trang catalog"><Link className={page===1?"disabled":""} href={pageHref(Math.max(1,page-1))}>Trước</Link>{Array.from({length:pages},(_,i)=>i+1).map(n=><Link key={n} className={n===page?"active":""} href={pageHref(n)}>{n}</Link>)}<Link className={page===pages?"disabled":""} href={pageHref(Math.min(pages,page+1))}>Sau</Link></nav>}</section></PageShell>}
+import type {Metadata} from "next";
+import {redirect} from "next/navigation";
+import {CatalogBrowser} from "@/components/CatalogBrowser";
+import {PageShell} from "@/components/PageShell";
+import {occasionGuides} from "@/data/occasion-guides";
+import {getActiveProducts} from "@/sanity/products";
+
+export const metadata: Metadata = {title: "Hoa", description: "Khám phá các mẫu hoa tươi, hoa sáp, hoa len, flower box và hoa cưới của Tamas.", alternates: {canonical: "/san-pham"}};
+export const revalidate = 3600;
+type Query = {category?: string; occasion?: string; q?: string; page?: string};
+
+export default async function ProductListing({searchParams}: {searchParams: Promise<Query>}) {
+  const query = await searchParams;
+  if (query.occasion) {
+    const guide = occasionGuides.find((item) => item.occasion === query.occasion);
+    if (guide) redirect(`/dip-tang/${guide.slug}`);
+  }
+  const products = await getActiveProducts();
+  return <PageShell><section className="listing-head"><p className="location">Danh mục hoa</p><h1><span className="catalog-heading-line">Chọn một mẫu, rồi để</span><br/><span className="catalog-heading-line">Tamas chuẩn bị phần còn lại.</span></h1><p>Mỗi mẫu có thể được điều chỉnh theo sắc hoa, dịp tặng và ngân sách của bạn.</p></section><CatalogBrowser products={products} initialQuery={query}/></PageShell>;
+}

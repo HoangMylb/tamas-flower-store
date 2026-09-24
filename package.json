@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "npm run check:listing-grid && next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "check:listing-grid": "node scripts/check-listing-grid.mjs",
     "migrate:products": "node --env-file=.env.local --import tsx scripts/migrate-products-to-sanity.ts"
   },
   "dependencies": {
     "@sanity/image-url": "^2.1.1",
     "@vercel/analytics": "^2.0.1",
+    "gsap": "^3.15.0",
     "next": "16.3.6",
     "next-sanity": "^13.3.4",
     "react": "19.2.8",
