@@ -1,0 +1,2 @@
+import {business,zaloHref} from "@/data/business"; import {Message,Phone} from "./Icons";
+export function ContactBar(){return <div className="contact-bar"><a href={`tel:${business.phone}`} aria-label="Gọi Tamas"><Phone/><span>Gọi</span></a><a href={zaloHref()} target="_blank" rel="noopener noreferrer" aria-label="Tư vấn qua Zalo"><Message/><span>Zalo</span></a><a href={business.facebook} target="_blank" rel="noopener noreferrer" aria-label="Nhắn Facebook"><Message/><span>Facebook</span></a></div>}

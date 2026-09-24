@@ -1,0 +1,22 @@
+.copy {
+  display: block !important;
+  min-width: 0;
+}
+
+.copy h3 {
+  margin: 5px 0 0;
+  font: 500 clamp(21px, 1.7vw, 27px) / 1.05 var(--serif);
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+.copy span {
+  display: block;
+  margin-top: 6px;
+}
+
+.image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}

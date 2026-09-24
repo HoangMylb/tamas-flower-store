@@ -1,69 +1,11 @@
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
-}
+import type {Metadata} from "next"; import Image from "next/image"; import Link from "next/link"; import {PageShell} from "@/components/PageShell"; import {Arrow} from "@/components/Icons"; import {business,zaloHref} from "@/data/business"; import {ProductCard} from "@/components/ProductCard"; import {getHomePageContent} from "@/sanity/products";
+export const metadata:Metadata={alternates:{canonical:"/"}};
+export const revalidate = 300;
+export default async function Home(){const {categoryTiles,featuredProducts,instagramImages}=await getHomePageContent(); return <PageShell><section className="hero"><div className="hero-copy"><p className="location">Được chuẩn bị tại Sài Gòn</p><h1>Hoa dành cho những điều khó nói thành lời.</h1><p>Tamas lắng nghe dịp tặng, sắc hoa bạn yêu và câu chuyện bạn muốn gửi đi — rồi chuẩn bị một bó hoa thật riêng.</p><div className="hero-actions"><Link className="button button-ink" href="/san-pham">Khám phá hoa <Arrow/></Link><a className="text-link" href={zaloHref()} target="_blank" rel="noopener noreferrer">Tư vấn cùng Tamas</a></div></div><div className="hero-image hero-image-portrait" role="img" aria-label="Cô gái ôm bó hoa hồng tại Tamas Flower Store"/><div className="hero-note">Tamas<br/>Flower<br/>Store</div></section>
+<section className="section category-section"><div className="section-heading"><h2>Chọn hoa theo cách của bạn.</h2><Link className="text-link" href="/san-pham">Xem tất cả <Arrow/></Link></div><div className="categories">{categoryTiles.map((c,i)=><Link href={`/san-pham?category=${c.slug}`} className={`category c${i+1}`} key={c.slug}><Image src={c.image} alt={c.name} fill sizes="(max-width: 720px) 70vw, 28vw"/><span>{c.name}<Arrow/></span></Link>)}</div></section>
+<section className="section featured"><div className="section-heading"><div><h2>Được yêu thích tại Tamas</h2><p>Những mẫu hoa được khách tìm nhiều nhất — có thể điều chỉnh theo tone và ngân sách của bạn.</p></div><Link className="text-link" href="/san-pham">Xem catalog <Arrow/></Link></div><div className="products-editorial">{featuredProducts.map((p,i)=><ProductCard product={p} large={i===0} key={p.slug}/>)}</div></section>
+<section className="occasions"><div><h2>Luôn có một lý do để tặng hoa.</h2><p>Chọn dịp của bạn, rồi để Tamas gợi ý một mẫu phù hợp.</p></div><div className="occasion-links">{['Sinh nhật','Tốt nghiệp','Kỷ niệm','Tình yêu','Cưới','Chúc mừng'].map(o=><Link key={o} href={`/san-pham?occasion=${encodeURIComponent(o)}`}>{o}<Arrow/></Link>)}</div></section>
+<section className="story"><div className="story-image"><Image src="/images/enhanced/01_Fresh-Flowers/tamas-fresh-pastel-bouquet-01.webp" alt="Bó hoa pastel được Tamas chuẩn bị" fill sizes="(max-width:720px) 100vw, 45vw"/></div><div><h2>Không chỉ là một bó hoa.</h2><p>Tại Tamas, một bó hoa bắt đầu bằng người nhận: họ thích điều gì, dịp hôm nay là gì, và bạn muốn họ cảm thấy thế nào khi mở món quà.</p><p>Chúng mình chuẩn bị hoa với sự chỉn chu của một món quà được gửi bằng cả tấm lòng.</p><Link className="text-link" href="/ve-tamas">Câu chuyện của Tamas <Arrow/></Link></div></section>
+<section className="custom"><div><p className="location">Tamas làm hoa theo câu chuyện của bạn</p><h2>Không tìm thấy mẫu bạn muốn?</h2><p>Hãy gửi Tamas người nhận, dịp tặng, tone màu và ngân sách. Shop sẽ tư vấn một thiết kế thật phù hợp.</p></div><a className="button button-paper" href={zaloHref()} target="_blank" rel="noopener noreferrer">Tư vấn qua Zalo <Arrow/></a></section>
+<section className="section instagram"><div className="section-heading"><div><h2>Một chút Tamas mỗi ngày.</h2><p>Khám phá thêm các mẫu hoa và câu chuyện từ shop.</p></div><a className="text-link" href={business.instagram} target="_blank" rel="noopener noreferrer">@tamas.flower <Arrow/></a></div><div className="insta-grid">{instagramImages.map((image,index)=><Image key={`${image.src}-${index}`} src={image.src} alt={image.alt} width={420} height={420}/>)}</div></section>
+<section className="contact-section"><div><p className="location">Ghé Tamas hoặc nhắn shop</p><h2>Tamas Flower Store</h2><p>{business.address}</p><p>{business.hours}</p></div><div className="contact-links"><a href={`tel:${business.phone}`}>Hotline<br/><strong>{business.phoneDisplay}</strong></a><a href={zaloHref()} target="_blank" rel="noopener noreferrer">Zalo<br/><strong>{business.phoneDisplay}</strong></a><a href={`mailto:${business.email}`}>Email<br/><strong>{business.email}</strong></a></div></section></PageShell>}
