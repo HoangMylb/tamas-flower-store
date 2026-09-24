@@ -12,6 +12,11 @@ if (!projectId || !dataset || !token) throw new Error("NEXT_PUBLIC_SANITY_PROJEC
 
 const client = createClient({projectId, dataset, apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION ?? "2026-09-24", token, useCdn: false});
 const uploaded = new Map<string, {_type: "image"; asset: {_type: "reference"; _ref: string}}>();
+const homeFeaturedSlugs = ["pink-whisper", "pastel-garden", "soft-morning"];
+const homeFeaturedProducts = products
+  .filter(product => homeFeaturedSlugs.includes(product.slug))
+  .sort((a, b) => homeFeaturedSlugs.indexOf(a.slug) - homeFeaturedSlugs.indexOf(b.slug))
+  .map(product => ({_key: product.slug, _type: "homeProduct", product: {_type: "reference", _ref: `product-${product.slug}`}}));
 
 async function uploadImage(path: string) {
   const cached = uploaded.get(path);
@@ -24,12 +29,14 @@ async function uploadImage(path: string) {
 
 async function main() {
   console.log(`Starting migration of ${products.length} products.`);
-  await Promise.all(products.map(async (product, index) => {
+  const existingIds = new Set(await client.fetch<string[]>(`*[_type == "product" && _id in $ids]._id`, {ids: products.map(product => `product-${product.slug}`)}));
+  const productsToCreate = products.filter(product => !existingIds.has(`product-${product.slug}`));
+  await Promise.all(productsToCreate.map(async (product, index) => {
     console.log(`Migrating ${index + 1}/${products.length}: ${product.slug}`);
     const images = (await Promise.all(product.gallery.slice(0, 5).map(uploadImage)))
       .map((image, imageIndex) => ({...image, _key: `image-${imageIndex + 1}`}));
     const price = Number(product.priceLabel.replace(/[^\d]/g, ""));
-    await client.createOrReplace({
+    await client.create({
       _id: `product-${product.slug}`,
       _type: "product",
       title: product.name,
@@ -50,10 +57,7 @@ async function main() {
   await client.createIfNotExists({
     _id: "homePage",
     _type: "homePage",
-    featuredProducts: products
-      .filter(product => product.featured)
-      .slice(0, 4)
-      .map(product => ({_key: product.slug, _type: "homeProduct", product: {_type: "reference", _ref: `product-${product.slug}`}})),
+    featuredProducts: homeFeaturedProducts,
   });
 
   const categoryTiles = await Promise.all(categories.map(async category => ({
@@ -70,6 +74,10 @@ async function main() {
     alt: product.name,
   })));
   await client.patch("homePage").setIfMissing({categoryTiles, instagramImages}).commit();
+
+  const currentFeatured = await client.fetch<{featuredProducts?: Array<{_key?: string; [key: string]: unknown}>} | null>(`*[_id == "homePage"][0]{featuredProducts[]}`);
+  const orderedFeatured = homeFeaturedProducts.map(product => currentFeatured?.featuredProducts?.find(existing => existing._key === product._key) ?? product);
+  if (currentFeatured?.featuredProducts?.length !== orderedFeatured.length || orderedFeatured.some((product, index) => currentFeatured?.featuredProducts?.[index]?._key !== product._key)) await client.patch("homePage").set({featuredProducts: orderedFeatured}).commit();
 
   const count = await client.fetch<number>(`count(*[_type == "product"])`);
   console.log(`Migrated ${products.length} static products. Sanity product count: ${count}.`);

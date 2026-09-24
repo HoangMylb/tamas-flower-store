@@ -24,7 +24,31 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; heig
 .category-section .category:nth-child(4) img { object-position: 50% 43%; }
 .category-section .category:nth-child(5) img { object-position: 50% 48%; }
 .category-section .category:nth-child(6) img { object-position: 50% 48%; }
-.featured .products-editorial { max-width: 1080px; margin-inline: auto; }
+.featured .products-editorial { max-width: 1040px; margin: 24px auto 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.featured .products-editorial .product { margin: 0; }
+.featured .products-editorial .product:nth-child(2) { margin-top: 48px; }
+.featured .products-editorial .product-image { aspect-ratio: 4 / 5; }
+.featured .products-editorial .product-copy { padding-top: 12px; }
+.catalog-search { display: flex; max-width: 620px; margin-bottom: 28px; border-bottom: 1px solid var(--ink); }
+.catalog-search input { min-width: 0; flex: 1; border: 0; background: transparent; padding: 13px 0; color: var(--ink); font: inherit; outline: 0; }
+.catalog-search button { border: 0; background: transparent; color: var(--ink); padding: 0 0 0 20px; font: 600 12px/1 var(--sans); cursor: pointer; }
+.catalog-count { margin: 0 0 28px; color: var(--muted); font-size: 12px; }
+.pagination { display: flex; gap: 8px; align-items: center; justify-content: center; margin-top: 60px; }
+.pagination a { min-width: 38px; min-height: 38px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); padding: 0 11px; font-size: 12px; }
+.pagination a.active { border-color: var(--ink); background: var(--ink); color: var(--paper-white); }
+.pagination a.disabled { pointer-events: none; color: var(--line); }
+.occasion-hero { max-width: 1040px; padding: 120px var(--edge-gutter) 80px; margin-inline: auto; }
+.occasion-hero h1, .occasion-advice h2, .price-guide h2 { max-width: 15ch; margin: 0 0 26px; font: 500 clamp(48px, 5.4vw, 82px)/.91 var(--serif); letter-spacing: -.04em; }
+.occasion-hero > p:last-child { max-width: 57ch; color: var(--muted); }
+.occasion-advice, .price-guide { max-width: 1200px; margin-inline: auto; padding: 80px var(--edge-gutter); border-top: 1px solid var(--line); }
+.occasion-advice > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.occasion-advice article { border-top: 1px solid var(--ink); padding-top: 17px; }
+.occasion-advice h3 { margin: 0 0 12px; font: 500 30px/1 var(--serif); }
+.occasion-advice p, .price-guide > p { max-width: 48ch; color: var(--muted); }
+.price-guide { background: var(--soft-rose); max-width: none; padding-inline: max(var(--edge-gutter), calc((100vw - 1200px) / 2)); }
+.price-guide > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 36px 0; }
+.price-guide > div p { margin: 0; border-top: 1px solid #b6949c; padding-top: 14px; color: #5e4750; }
+.occasion-products { padding-top: 96px; }
 .story { max-width: 1200px; margin-inline: auto; padding-block: 110px; }
 .about-editorial-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, .94fr); min-height: min(880px, calc(100svh - 82px)); padding: 92px var(--edge-gutter) 78px; gap: clamp(42px, 7vw, 122px); align-items: center; }
 .about-editorial-copy { max-width: 660px; padding-left: clamp(0px, 3vw, 52px); }
@@ -82,6 +106,14 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; width: 0; heig
   .category-section .category:nth-child(1) { grid-column: 1 / -1; grid-row: auto; min-height: 260px; }
   .category-section .category:nth-child(2), .category-section .category:nth-child(3), .category-section .category:nth-child(5), .category-section .category:nth-child(6) { grid-column: auto; grid-row: auto; }
   .category-section .category:nth-child(4) { grid-column: 1; grid-row: span 2; }
+  .featured .products-editorial { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 12px; margin-top: 0; }
+  .featured .products-editorial { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .featured .products-editorial .product:nth-child(2) { margin-top: 24px; }
+  .catalog-search { margin-bottom: 22px; }
+  .occasion-hero { padding: 76px 24px 54px; }
+  .occasion-advice, .price-guide { padding: 64px 24px; }
+  .occasion-advice > div, .price-guide > div { grid-template-columns: 1fr; gap: 24px; }
+  .pagination { margin-top: 42px; }
   .story { padding-block: 76px; }
   .about-editorial-hero { display: block; min-height: 0; padding: 75px 24px 58px; }
   .about-editorial-copy { padding: 0; }

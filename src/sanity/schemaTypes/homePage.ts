@@ -35,7 +35,7 @@ export const homePageType = defineType({
     defineField({
       name: "featuredProducts",
       title: "Sản phẩm hiển thị trên trang chủ",
-      description: "Chọn tối đa 4 sản phẩm. Bạn có thể đặt tên hoặc ảnh riêng cho trang chủ mà không làm thay đổi trang chi tiết sản phẩm.",
+      description: "Chọn tối đa 3 sản phẩm. Bạn có thể đặt tên hoặc ảnh riêng cho trang chủ mà không làm thay đổi trang chi tiết sản phẩm.",
       type: "array",
       of: [{
         type: "object",
@@ -69,7 +69,7 @@ export const homePageType = defineType({
           prepare: ({title, fallbackTitle, media, fallbackMedia}) => ({title: title || fallbackTitle || "Chưa chọn sản phẩm", media: media || fallbackMedia}),
         },
       }],
-      validation: rule => rule.max(4),
+      validation: rule => rule.max(3),
     }),
     defineField({
       name: "instagramImages",

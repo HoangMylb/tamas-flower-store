@@ -11,7 +11,7 @@ type SanityHomeImage = {image?: unknown; alt?: string};
 type HomePageContent = {categoryTiles: {slug: string; name: string; image: string}[]; featuredProducts: Product[]; instagramImages: {src: string; alt: string}[]};
 const projection = `{"slug": slug.current, title, category, priceType, price, shortDescription, description, images, colors, occasions, featured, active}`;
 const activeFilter = `_type == "product" && active == true && defined(slug.current)`;
-const productCache = {next: {revalidate: 300, tags: ["sanity-products"]}};
+const productCache = {next: {revalidate: 3600, tags: ["sanity-products"]}};
 
 function priceLabel(product: SanityProduct) {
   if (product.priceType === "contact") return "Liên hệ";
@@ -54,7 +54,7 @@ export async function getHomePageContent(): Promise<HomePageContent> {
     const homePage = await sanityClient.fetch<{categoryTiles?: SanityHomeCategory[]; featuredProducts?: SanityHomeProduct[]; instagramImages?: SanityHomeImage[]} | null>(
       `*[_id == "homePage"][0]{categoryTiles[]{category, title, image}, featuredProducts[]{product->${projection}, titleOverride, imageOverride}, instagramImages[]{image, alt}}`,
       {},
-      {next: {revalidate: 300, tags: ["sanity-home", "sanity-products"]}},
+      {next: {revalidate: 3600, tags: ["sanity-home", "sanity-products"]}},
     );
     if (!homePage) return fallback;
     const categoryTiles = Array.isArray(homePage.categoryTiles) && homePage.categoryTiles.length

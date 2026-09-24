@@ -7,7 +7,9 @@ export const business = {
   facebook: "https://www.facebook.com/profile.php?id=100055054099654",
   instagram: "https://www.instagram.com/tamas.flower/",
   zalo: "https://zalo.me/0708884022",
-  hours: "09:00–21:00 mỗi ngày",
+  hours: "09:00–19:00 mỗi ngày",
+  afterHours: "Cần hoa ngoài khung giờ, hãy nhắn trực tiếp để shop hỗ trợ.",
+  holidayHours: "20/10, 8/3 và Valentine: mở cửa 24/24.",
 };
 
 export const zaloHref = (product?: string) =>

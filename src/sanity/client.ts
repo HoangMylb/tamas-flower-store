@@ -5,5 +5,5 @@ export const sanityClient = hasSanityConfig ? createClient({
   projectId: sanityEnv.projectId,
   dataset: sanityEnv.dataset,
   apiVersion: sanityEnv.apiVersion,
-  useCdn: true,
+  useCdn: false,
 }) : null;
