@@ -55,8 +55,13 @@
 }
 
 .quickFilters button:hover,
-.quickFilters .active,
 .categorySelect select:focus { border-color: var(--ink); }
+
+.quickFilters .active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper-white);
+}
 
 .categorySelect select { appearance: auto; }
 

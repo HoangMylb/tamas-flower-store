@@ -5,7 +5,7 @@ const categories = [
   {title: "Hoa sáp", value: "hoa-sap"},
   {title: "Hoa lụa", value: "hoa-lua"},
   {title: "Hoa len & gấu bông", value: "hoa-len"},
-  {title: "Flower Box", value: "flower-box"},
+  {title: "Hộp hoa", value: "flower-box"},
   {title: "Hoa cưới", value: "hoa-cuoi"},
 ];
 
@@ -25,9 +25,9 @@ export const productType = defineType({
     defineField({name: "featured", title: "Sản phẩm nổi bật", type: "boolean", initialValue: false}),
     defineField({name: "active", title: "Đang hiển thị trên website", type: "boolean", initialValue: true}),
     defineField({name: "occasions", title: "Dịp tặng", type: "array", of: [{type: "string"}], options: {list: ["Sinh nhật", "Tốt nghiệp", "Kỷ niệm", "Tình yêu", "Cưới", "Chúc mừng", "Cảm ơn"]}}),
-    defineField({name: "colors", title: "Tone màu", type: "array", of: [{type: "string"}], options: {layout: "tags"}}),
+    defineField({name: "colors", title: "Tông màu", type: "array", of: [{type: "string"}], options: {layout: "tags"}}),
   ],
-  preview: {select: {title: "title", subtitle: "category", media: "images.0"}, prepare: ({title, subtitle, media}) => ({title, subtitle: categories.find(category => category.value === subtitle)?.title ?? subtitle, media})},
+  preview: {select: {title: "title", category: "category", media: "images.0"}, prepare: ({title, category, media}) => ({title: `${title} - ${categories.find(item => item.value === category)?.title ?? category}`, media})},
   orderings: [
     {title: "Mới cập nhật", name: "updatedAtDesc", by: [{field: "_updatedAt", direction: "desc"}]},
     {title: "Tên sản phẩm", name: "titleAsc", by: [{field: "title", direction: "asc"}]},

@@ -5,7 +5,7 @@ const categoryOptions = [
   {title: "Hoa sáp", value: "hoa-sap"},
   {title: "Hoa lụa", value: "hoa-lua"},
   {title: "Hoa len & gấu bông", value: "hoa-len"},
-  {title: "Flower Box", value: "flower-box"},
+  {title: "Hộp hoa", value: "flower-box"},
   {title: "Hoa cưới", value: "hoa-cuoi"},
 ];
 
@@ -17,7 +17,7 @@ export const homePageType = defineType({
     defineField({
       name: "categoryTiles",
       title: "Ảnh danh mục — Chọn hoa theo cách của bạn",
-      description: "6 ô ảnh lớn ở section đầu tiên của trang chủ.",
+      description: "6 ô ảnh lớn ở phần đầu tiên của trang chủ.",
       type: "array",
       of: [{
         type: "object",
@@ -28,7 +28,7 @@ export const homePageType = defineType({
           defineField({name: "title", title: "Tên hiển thị", type: "string", validation: rule => rule.required(), readOnly: true}),
           defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, validation: rule => rule.required()}),
         ],
-        preview: {select: {title: "title", subtitle: "category", media: "image"}},
+        preview: {select: {title: "title", category: "category", media: "image"}, prepare: ({title, category, media}) => ({title: `${title} - ${category ?? ""}`, media})},
       }],
       validation: rule => rule.max(6),
     }),
