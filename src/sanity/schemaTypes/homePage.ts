@@ -26,7 +26,7 @@ export const homePageType = defineType({
         fields: [
           defineField({name: "category", title: "Danh mục", type: "string", options: {list: categoryOptions, layout: "dropdown"}, validation: rule => rule.required(), readOnly: true}),
           defineField({name: "title", title: "Tên hiển thị", type: "string", validation: rule => rule.required(), readOnly: true}),
-          defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, validation: rule => rule.required()}),
+          defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, fields: [defineField({name: "alt", title: "Mô tả ảnh (alt text) — cần kiến thức SEO", description: "Mô tả đúng nội dung ảnh bằng câu tự nhiên. Không lặp từ khoá.", type: "string", validation: rule => rule.max(150).warning("Nên giữ ngắn gọn, tối đa 150 ký tự.")})], validation: rule => rule.required()}),
         ],
         preview: {select: {title: "title", category: "category", media: "image"}, prepare: ({title, category, media}) => ({title: `${title} - ${category ?? ""}`, media})},
       }],
@@ -64,6 +64,7 @@ export const homePageType = defineType({
             description: "Để trống để dùng ảnh đầu tiên của sản phẩm gốc.",
             type: "image",
             options: {hotspot: true},
+            fields: [defineField({name: "alt", title: "Mô tả ảnh (alt text) — cần kiến thức SEO", description: "Mô tả đúng nội dung ảnh bằng câu tự nhiên. Không lặp từ khoá.", type: "string", validation: rule => rule.max(150).warning("Nên giữ ngắn gọn, tối đa 150 ký tự.")})],
           }),
         ],
         preview: {
@@ -83,8 +84,7 @@ export const homePageType = defineType({
         name: "homeInstagramImage",
         title: "Ảnh Instagram",
         fields: [
-          defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, validation: rule => rule.required()}),
-          defineField({name: "alt", title: "Mô tả ảnh", type: "string", description: "Dùng cho người đọc màn hình.", validation: rule => rule.required(), readOnly: true}),
+          defineField({name: "image", title: "Ảnh", type: "image", options: {hotspot: true}, fields: [defineField({name: "alt", title: "Mô tả ảnh (alt text) — cần kiến thức SEO", description: "Mô tả đúng nội dung ảnh bằng câu tự nhiên. Không lặp từ khoá.", type: "string", validation: rule => rule.max(150).warning("Nên giữ ngắn gọn, tối đa 150 ký tự.")})], validation: rule => rule.required()}),
         ],
         preview: {select: {title: "alt", media: "image"}},
       }],

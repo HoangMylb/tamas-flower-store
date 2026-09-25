@@ -1,0 +1,18 @@
+.price {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.originalPrice {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.salePrice {
+  color: var(--rose);
+  font: 500 26px/1 var(--serif);
+  letter-spacing: -0.03em;
+}

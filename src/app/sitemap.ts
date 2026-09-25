@@ -1,3 +1,3 @@
-import type {MetadataRoute} from "next"; import {getActiveProducts} from "@/sanity/products";
+import type {MetadataRoute} from "next"; import {categories} from "@/data/categories"; import {occasionGuides} from "@/data/occasion-guides"; import {getActiveProducts} from "@/sanity/products";
 export const revalidate = 3600;
-export default async function sitemap():Promise<MetadataRoute.Sitemap>{const base=process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/,"");if(!base)return [];const products=await getActiveProducts();return ["","/san-pham","/ve-tamas","/lien-he",...products.map(p=>`/san-pham/${p.slug}`)].map(url=>({url:`${base}${url}`,lastModified:new Date()}))}
+export default async function sitemap():Promise<MetadataRoute.Sitemap>{const base=process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/,"");if(!base)return [];const products=await getActiveProducts();return ["","/san-pham","/ve-tamas","/lien-he",...categories.map(category=>`/danh-muc/${category.slug}`),...occasionGuides.map(guide=>`/dip-tang/${guide.slug}`),...products.map(p=>`/san-pham/${p.slug}`)].map(url=>({url:`${base}${url}`,lastModified:new Date()}))}

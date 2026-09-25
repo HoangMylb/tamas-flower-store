@@ -6,6 +6,7 @@ import styles from "./ProductGallery.module.css";
 
 type ProductGalleryProps = {
   images: string[];
+  imageAlts: string[];
   name: string;
 };
 
@@ -14,7 +15,7 @@ function Chevron({direction}:{direction:"previous"|"next"}) {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d={previous ? "M14.5 5 7.5 12l7 7" : "m9.5 5 7 7-7 7"} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>;
 }
 
-export function ProductGallery({images,name}:ProductGalleryProps) {
+export function ProductGallery({images,imageAlts,name}:ProductGalleryProps) {
   const gallery = images.slice(0,5);
   const [activeIndex,setActiveIndex] = useState(0);
   const swipeStart = useRef<number | null>(null);
@@ -28,7 +29,7 @@ export function ProductGallery({images,name}:ProductGalleryProps) {
 
   return <div className={styles.gallery} aria-label={`Ảnh của ${name}`} onKeyDown={onKeyDown} tabIndex={0}>
     <div className={styles.main} onTouchStart={(event)=>{swipeStart.current=event.changedTouches[0]?.clientX ?? null;}} onTouchEnd={(event)=>{const start=swipeStart.current;const end=event.changedTouches[0]?.clientX;if(start!==null&&end!==undefined&&Math.abs(end-start)>40)move(end<start?1:-1);swipeStart.current=null;}}>
-      <Image src={activeImage} alt={`${name} — góc chụp ${activeIndex+1} trên ${gallery.length}`} fill priority sizes="(max-width: 800px) 100vw, 44vw"/>
+      <Image src={activeImage} alt={imageAlts[activeIndex] || `${name} — góc chụp ${activeIndex+1} trên ${gallery.length}`} fill priority sizes="(max-width: 800px) 100vw, 44vw"/>
       {gallery.length > 1 && <>
         <button className={`${styles.control} ${styles.previous}`} type="button" aria-label="Xem ảnh trước" onClick={()=>move(-1)}><Chevron direction="previous"/></button>
         <button className={`${styles.control} ${styles.next}`} type="button" aria-label="Xem ảnh tiếp theo" onClick={()=>move(1)}><Chevron direction="next"/></button>

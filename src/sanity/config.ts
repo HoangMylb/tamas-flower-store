@@ -3,6 +3,7 @@ import {buildLegacyTheme, defineConfig, defineLocaleResourceBundle} from "sanity
 import {structureTool} from "sanity/structure";
 import {sanityEnv} from "./env";
 import {schemaTypes} from "./schemaTypes";
+import {CmsWorkspace} from "./CmsWorkspace";
 
 const productCategories = [
   {title: "Hoa tươi", value: "hoa-tuoi"},
@@ -84,6 +85,10 @@ export const sanityConfig = defineConfig({
             )),
           ]),
         ),
+        S.divider(),
+        S.listItem().title("SEO trang danh mục").id("category-pages").child(S.documentTypeList("categoryPage").title("SEO trang danh mục")),
+        S.listItem().title("SEO trang dịp tặng").id("occasion-pages").child(S.documentTypeList("occasionPage").title("SEO trang dịp tặng")),
       ]),
   })],
+  tools: previousTools => [...previousTools.filter(tool => tool.name !== "structure"), {name: "cms", title: "CMS", component: CmsWorkspace}],
 });

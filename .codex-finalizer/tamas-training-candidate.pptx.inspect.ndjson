@@ -1,0 +1,258 @@
+{"kind":"deck","id":"pr/t2wlj1","name":"Deck"}
+{"kind":"layout","layoutId":"53f4ddb0-2e9f-4cba-8e93-b70c0c311430","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1e77554b-3cbf-44cc-91e0-37505f68ec8f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/kaj5o6","slide":1,"title":"Tamas Flower Store","textShapes":5}
+{"kind":"shape","id":"sh/5wza58fa","slide":1,"bbox":[0,0,688,720]}
+{"kind":"textbox","id":"sh/vqxszyx8","slide":1,"text":"Tamas Flower Store","textPreview":"Tamas Flower Store","textChars":18,"textLines":1,"bbox":[72,202,555,62]}
+{"kind":"textbox","id":"sh/a5orqtwn","slide":1,"text":"Hướng dẫn quản lý sản phẩm","textPreview":"Hướng dẫn quản lý sản phẩm","textChars":26,"textLines":1,"bbox":[72,270,540,55]}
+{"kind":"textbox","id":"sh/xsfa18fe","slide":1,"text":"CMS & Website","textPreview":"CMS & Website","textChars":13,"textLines":1,"bbox":[74,343,280,32]}
+{"kind":"shape","id":"sh/wr69s3et","slide":1,"bbox":[72,414,370,0]}
+{"kind":"textbox","id":"sh/n2xsvyxc","slide":1,"text":"Dành cho chị chủ shop\nKhông cần biết kỹ thuật","textPreview":"Dành cho chị chủ shop | Không cần biết kỹ thuật","textChars":45,"textLines":2,"bbox":[72,445,390,72]}
+{"kind":"textbox","id":"sh/m1ormtwr","slide":1,"text":"Bản training nội bộ · 25.09.2026","textPreview":"Bản training nội bộ · 25.09.2026","textChars":32,"textLines":1,"bbox":[72,648,420,24]}
+{"kind":"image","id":"im/jedsz2t8","slide":1,"name":"","geometry":"rect","alt":"Ảnh hoa thật tại Tamas Flower Store","bbox":[688,0,592,720]}
+{"kind":"image","id":"im/5gva1sbe","slide":1,"name":"","geometry":"rect","alt":"Logo Tamas Flower Store","bbox":[72,58,120,44]}
+{"kind":"notes","id":"nt/kaj5o6","slide":1,"text":"Mở đầu: Hôm nay chị chỉ cần nhớ cách quản lý sản phẩm. Những phần kỹ thuật sẽ do developer phụ trách."}
+{"kind":"slide","id":"sl/vocnmc","slide":2,"title":"Chị cần nhớ đúng 2 nơi","textShapes":9}
+{"kind":"textbox","id":"sh/k3m5onap","slide":2,"text":"Chị cần nhớ đúng 2 nơi","textPreview":"Chị cần nhớ đúng 2 nơi","textChars":22,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/j2t4v294","slide":2,"text":"Lưu cả hai link vào Dấu trang để mở lại khi cần","textPreview":"Lưu cả hai link vào Dấu trang để mở lại khi cần","textChars":47,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/tsvm1crm","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[610,250,52,52]}
+{"kind":"textbox","id":"sh/8rm5s7q1","slide":2,"text":"Website khách xem","textPreview":"Website khách xem","textChars":17,"textLines":1,"bbox":[682,253,400,36]}
+{"kind":"textbox","id":"sh/7qd4z29g","slide":2,"text":"tamas-flower-store-olive.vercel.app","textPreview":"tamas-flower-store-olive.vercel.app","textChars":35,"textLines":1,"bbox":[682,300,480,28]}
+{"kind":"shape","id":"sh/6p4nqxsv","slide":2,"bbox":[610,363,540,0]}
+{"kind":"textbox","id":"sh/pwbmp8r2","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[610,402,52,52]}
+{"kind":"textbox","id":"sh/ov2lw3ah","slide":2,"text":"Trang quản lý CMS","textPreview":"Trang quản lý CMS","textChars":17,"textLines":1,"bbox":[682,405,400,36]}
+{"kind":"textbox","id":"sh/exwv6hcr","slide":2,"text":"tamas-flower-store-olive.vercel.app/admin","textPreview":"tamas-flower-store-olive.vercel.app/admin","textChars":41,"textLines":1,"bbox":[682,452,500,28]}
+{"kind":"textbox","id":"sh/fy5wfmtc","slide":2,"text":"CMS là nơi chị thêm, sửa, ẩn sản phẩm.","textPreview":"CMS là nơi chị thêm, sửa, ẩn sản phẩm.","textChars":38,"textLines":1,"bbox":[682,516,430,48]}
+{"kind":"image","id":"im/36xgvup8","slide":2,"name":"","geometry":"rect","alt":"Bó hoa Tamas","bbox":[70,242,480,350]}
+{"kind":"notes","id":"nt/vocnmc","slide":2,"text":"Chỉ hai link này là cần dùng hằng ngày. Website là nơi khách xem; CMS là nơi chị quản lý."}
+{"kind":"slide","id":"sl/fu9zme","slide":3,"title":"Sản phẩm đi từ CMS ra website","textShapes":11}
+{"kind":"textbox","id":"sh/qlkj6h0v","slide":3,"text":"Sản phẩm đi từ CMS ra website","textPreview":"Sản phẩm đi từ CMS ra website","textChars":29,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/dovihczm","slide":3,"text":"Chị cập nhật trong CMS, sau đó nhấn Publish","textPreview":"Chị cập nhật trong CMS, sau đó nhấn Publish","textChars":43,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"shape","id":"sh/cn2187i1","slide":3,"bbox":[180,270,170,170]}
+{"kind":"textbox","id":"sh/zqd0jmhs","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[239,298,52,48]}
+{"kind":"textbox","id":"sh/ep4jah07","slide":3,"text":"Nhập sản phẩm","textPreview":"Nhập sản phẩm","textChars":13,"textLines":1,"bbox":[160,468,230,54]}
+{"kind":"textbox","id":"sh/1svilwzi","slide":3,"text":"Tên, ảnh, giá, mô tả","textPreview":"Tên, ảnh, giá, mô tả","textChars":20,"textLines":1,"bbox":[142,540,246,32]}
+{"kind":"shape","id":"sh/0rm1crid","slide":3,"bbox":[545,270,170,170]}
+{"kind":"textbox","id":"sh/fu907ih8","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[604,298,52,48]}
+{"kind":"textbox","id":"sh/ut0zyx03","slide":3,"text":"Nhấn Publish","textPreview":"Nhấn Publish","textChars":12,"textLines":1,"bbox":[525,468,230,54]}
+{"kind":"textbox","id":"sh/cfq5gveh","slide":3,"text":"Lưu thay đổi","textPreview":"Lưu thay đổi","textChars":12,"textLines":1,"bbox":[507,540,246,32]}
+{"kind":"shape","id":"sh/xgj6p0fm","slide":3,"bbox":[910,270,170,170]}
+{"kind":"textbox","id":"sh/ad8nelwb","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[969,298,52,48]}
+{"kind":"textbox","id":"sh/behonqxw","slide":3,"text":"Khách xem\nwebsite","textPreview":"Khách xem | website","textChars":17,"textLines":2,"bbox":[890,468,230,54]}
+{"kind":"textbox","id":"sh/kjapkfed","slide":3,"text":"Catalog và trang chi tiết","textPreview":"Catalog và trang chi tiết","textChars":25,"textLines":1,"bbox":[872,540,246,32]}
+{"kind":"shape","id":"sh/lkj6t0fy","slide":3,"bbox":[350,355,172,0]}
+{"kind":"shape","id":"sh/yhs7i5w7","slide":3,"bbox":[715,355,172,0]}
+{"kind":"notes","id":"nt/fu9zme","slide":3,"text":"Nói ngắn: chị chỉ nhập nội dung, sau đó bấm Publish. Website tự nhận phần còn lại."}
+{"kind":"slide","id":"sl/n2wvkv","slide":4,"title":"Đăng nhập bằng Google","textShapes":7}
+{"kind":"textbox","id":"sh/y5sjyhgv","slide":4,"text":"Đăng nhập bằng Google","textPreview":"Đăng nhập bằng Google","textChars":21,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/l8j2twz6","slide":4,"text":"Chị dùng đúng Gmail đã được mời vào project","textPreview":"Chị dùng đúng Gmail đã được mời vào project","textChars":43,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/k7a10ryl","slide":4,"text":"Không cần tạo mật khẩu Sanity riêng.","textPreview":"Không cần tạo mật khẩu Sanity riêng.","textChars":36,"textLines":1,"bbox":[72,225,480,42]}
+{"kind":"textbox","id":"sh/7alkv6hc","slide":4,"text":"1. Mở trang quản lý\n2. Bấm Google\n3. Chọn Gmail của chị","textPreview":"1. Mở trang quản lý | 2. Bấm Google | 3. Chọn Gmail của chị","textChars":55,"textLines":3,"bbox":[72,298,450,125]}
+{"kind":"textbox","id":"sh/m9sj21gr","slide":4,"text":"Nếu không vào được, kiểm tra Gmail đó đã được mời chưa.","textPreview":"Nếu không vào được, kiểm tra Gmail đó đã được mời chưa.","textChars":55,"textLines":1,"bbox":[72,480,455,50]}
+{"kind":"textbox","id":"sh/8bu14byx","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[792,406,42,42]}
+{"kind":"textbox","id":"sh/vylkz6h8","slide":4,"text":"Bấm Google","textPreview":"Bấm Google","textChars":10,"textLines":1,"bbox":[844,413,180,26]}
+{"kind":"image","id":"im/cnix8bad","slide":4,"name":"","geometry":"rect","alt":"Ảnh chụp thật trang đăng nhập CMS","bbox":[588,168,620,440]}
+{"kind":"notes","id":"nt/n2wvkv","slide":4,"text":"Dùng ảnh chụp thật ngày 25/09/2026. Trỏ vào nút Google và nhắc chị không dùng Email/password."}
+{"kind":"slide","id":"sl/f9z1ox","slide":5,"title":"Mời đúng Gmail là đủ","textShapes":7}
+{"kind":"textbox","id":"sh/nqh4zelo","slide":5,"text":"Mời đúng Gmail là đủ","textPreview":"Mời đúng Gmail là đủ","textChars":20,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/8rq5sjm9","slide":5,"text":"Không cấp một bộ mật khẩu Sanity khác cho chị chủ","textPreview":"Không cấp một bộ mật khẩu Sanity khác cho chị chủ","textChars":49,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/at8nut4f","slide":5,"text":"NGƯỜI QUẢN LÝ PROJECT","textPreview":"NGƯỜI QUẢN LÝ PROJECT","textChars":21,"textLines":1,"bbox":[510,222,300,24]}
+{"kind":"textbox","id":"sh/veh43yl0","slide":5,"text":"Mời Gmail của chị vào\nSanity Manage → Project → Members","textPreview":"Mời Gmail của chị vào | Sanity Manage → Project → Members","textChars":55,"textLines":2,"bbox":[510,254,535,78]}
+{"kind":"shape","id":"sh/wfq5w3ml","slide":5,"bbox":[510,356,595,0]}
+{"kind":"textbox","id":"sh/xgzm583q","slide":5,"text":"CHỊ CHỦ SHOP","textPreview":"CHỊ CHỦ SHOP","textChars":12,"textLines":1,"bbox":[510,390,300,24]}
+{"kind":"textbox","id":"sh/ihsnyd4b","slide":5,"text":"Mở /admin → bấm Google → chọn đúng Gmail","textPreview":"Mở /admin → bấm Google → chọn đúng Gmail","textChars":40,"textLines":1,"bbox":[510,423,585,45]}
+{"kind":"textbox","id":"sh/ji1o7ylw","slide":5,"text":"Trên gói có Editor: dùng Editor.\nNếu project đang Free: Viewer không thể Publish; cần cân nhắc quyền Administrator hoặc nâng gói.","textPreview":"Trên gói có Editor: dùng Editor. | Nếu project đang Free: Viewer không thể Publish; cần cân nhắc quyền Administrator hoặc nâng gói.","textChars":129,"textLines":2,"bbox":[510,507,595,82]}
+{"kind":"image","id":"im/87i9cnm5","slide":5,"name":"","geometry":"rect","alt":"Bó hoa pastel Tamas","bbox":[70,235,350,340]}
+{"kind":"notes","id":"nt/f9z1ox","slide":5,"text":"Giải thích quyền: Sanity gắn membership với phương thức đăng nhập. Mời email cho tài khoản Google và dùng Google để đăng nhập. Nguồn: Sanity Roles, cập nhật 09/09/2026."}
+{"kind":"slide","id":"sl/m2i9ho","slide":6,"title":"Khu vực chị dùng hằng ngày","textShapes":6}
+{"kind":"textbox","id":"sh/y9sfqp0b","slide":6,"text":"Khu vực chị dùng hằng ngày","textPreview":"Khu vực chị dùng hằng ngày","textChars":26,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/lcjel4zm","slide":6,"text":"Chị chỉ cần vào mục Sản phẩm","textPreview":"Chị chỉ cần vào mục Sản phẩm","textChars":28,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/b61wfa1k","slide":6,"text":"Sản phẩm","textPreview":"Sản phẩm","textChars":8,"textLines":1,"bbox":[72,246,450,48]}
+{"kind":"textbox","id":"sh/a5sfm50z","slide":6,"text":"Tất cả sản phẩm","textPreview":"Tất cả sản phẩm","textChars":15,"textLines":1,"bbox":[72,311,420,36]}
+{"kind":"textbox","id":"sh/x8jehkjq","slide":6,"text":"Tìm sản phẩm\nMở để sửa\nCreate để thêm mới\nPublish để lưu","textPreview":"Tìm sản phẩm | Mở để sửa | Create để thêm mới | Publish để lưu","textChars":56,"textLines":4,"bbox":[112,385,430,142]}
+{"kind":"textbox","id":"sh/w7axofi5","slide":6,"text":"Không vào Settings, Tokens, API hay các phần cài đặt khác.","textPreview":"Không vào Settings, Tokens, API hay các phần cài đặt khác.","textChars":58,"textLines":1,"bbox":[72,590,530,45]}
+{"kind":"image","id":"im/povq1wfy","slide":6,"name":"","geometry":"rect","alt":"Hoa len và gấu bông Tamas","bbox":[762,164,446,464]}
+{"kind":"notes","id":"nt/m2i9ho","slide":6,"text":"Sau login, vào mục Sản phẩm. Không cần chạm vào các mục cài đặt kỹ thuật."}
+{"kind":"slide","id":"sl/k1ale7","slide":7,"title":"Tạo một sản phẩm mới","textShapes":12}
+{"kind":"textbox","id":"sh/9cze5wje","slide":7,"text":"Tạo một sản phẩm mới","textPreview":"Tạo một sản phẩm mới","textChars":20,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/mp8vuh03","slide":7,"text":"Chị điền lần lượt, rồi Publish một lần ở cuối","textPreview":"Chị điền lần lượt, rồi Publish một lần ở cuối","textChars":45,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/nqhw3m18","slide":7,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[70,270,42,42]}
+{"kind":"textbox","id":"sh/wfad0ri5","slide":7,"text":"Create","textPreview":"Create","textChars":6,"textLines":1,"bbox":[56,334,205,36]}
+{"kind":"shape","id":"sh/xgje9wzq","slide":7,"bbox":[118,291,158,0]}
+{"kind":"textbox","id":"sh/ad8vy10z","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[300,270,42,42]}
+{"kind":"textbox","id":"sh/be1w7mhk","slide":7,"text":"Tên + Đường dẫn","textPreview":"Tên + Đường dẫn","textChars":15,"textLines":1,"bbox":[286,334,205,36]}
+{"kind":"shape","id":"sh/kjad4bi1","slide":7,"bbox":[348,291,158,0]}
+{"kind":"textbox","id":"sh/lkjedgzm","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[530,270,42,42]}
+{"kind":"textbox","id":"sh/dszqt4z6","slide":7,"text":"Danh mục + ảnh","textPreview":"Danh mục + ảnh","textChars":14,"textLines":1,"bbox":[516,334,205,36]}
+{"kind":"shape","id":"sh/crq9kzil","slide":7,"bbox":[578,291,158,0]}
+{"kind":"textbox","id":"sh/rqh8ruhg","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[760,270,42,42]}
+{"kind":"textbox","id":"sh/qp8rip0v","slide":7,"text":"Giá + mô tả","textPreview":"Giá + mô tả","textChars":11,"textLines":1,"bbox":[746,334,205,36]}
+{"kind":"shape","id":"sh/lgjqxozi","slide":7,"bbox":[808,291,158,0]}
+{"kind":"textbox","id":"sh/0fq9ojix","slide":7,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[990,270,42,42]}
+{"kind":"textbox","id":"sh/zuh8vehc","slide":7,"text":"Publish","textPreview":"Publish","textChars":7,"textLines":1,"bbox":[976,334,205,36]}
+{"kind":"image","id":"im/lc32h036","slide":7,"name":"","geometry":"rect","alt":"Hoa tươi Tamas","bbox":[80,423,280,178]}
+{"kind":"image","id":"im/et8ju14b","slide":7,"name":"","geometry":"rect","alt":"Hoa sáp Tamas","bbox":[450,423,280,178]}
+{"kind":"image","id":"im/fuhk36lw","slide":7,"name":"","geometry":"rect","alt":"Flower Box Tamas","bbox":[820,423,280,178]}
+{"kind":"notes","id":"nt/k1ale7","slide":7,"text":"Chưa cần nhập hoàn hảo ngay lần đầu. Đi theo đúng thứ tự này để không bỏ sót các mục cần thiết."}
+{"kind":"slide","id":"sl/1ni3mc","slide":8,"title":"Tên, Đường dẫn và Danh mục","textShapes":13}
+{"kind":"textbox","id":"sh/fadkjmlo","slide":8,"text":"Tên, Đường dẫn và Danh mục","textPreview":"Tên, Đường dẫn và Danh mục","textChars":26,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/0b61cr29","slide":8,"text":"Danh mục quyết định khách tìm thấy sản phẩm ở đâu","textPreview":"Danh mục quyết định khách tìm thấy sản phẩm ở đâu","textChars":49,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/1cf2lc3e","slide":8,"text":"Tên sản phẩm","textPreview":"Tên sản phẩm","textChars":12,"textLines":1,"bbox":[70,230,270,32]}
+{"kind":"textbox","id":"sh/ql4j6xkr","slide":8,"text":"Ví dụ: Bó hoa Pink Love","textPreview":"Ví dụ: Bó hoa Pink Love","textChars":23,"textLines":1,"bbox":[70,270,330,30]}
+{"kind":"textbox","id":"sh/rmd0f2lc","slide":8,"text":"Đường dẫn","textPreview":"Đường dẫn","textChars":9,"textLines":1,"bbox":[70,342,270,32]}
+{"kind":"textbox","id":"sh/snm1872x","slide":8,"text":"Tạo từ tên sản phẩm. Không tự đổi đường dẫn của mẫu đang bán nếu không cần.","textPreview":"Tạo từ tên sản phẩm. Không tự đổi đường dẫn của mẫu đang bán nếu không cần.","textChars":75,"textLines":1,"bbox":[70,382,425,63]}
+{"kind":"textbox","id":"sh/dovihc3i","slide":8,"text":"Danh mục","textPreview":"Danh mục","textChars":8,"textLines":1,"bbox":[525,228,260,32]}
+{"kind":"textbox","id":"sh/ihkj2x4v","slide":8,"text":"1.  Hoa tươi","textPreview":"1.  Hoa tươi","textChars":12,"textLines":1,"bbox":[525,275,240,34]}
+{"kind":"textbox","id":"sh/3it0b2lg","slide":8,"text":"2.  Hoa sáp","textPreview":"2.  Hoa sáp","textChars":11,"textLines":1,"bbox":[525,337,240,34]}
+{"kind":"textbox","id":"sh/3q5wzi9g","slide":8,"text":"3.  Hoa lụa","textPreview":"3.  Hoa lụa","textChars":11,"textLines":1,"bbox":[525,399,240,34]}
+{"kind":"textbox","id":"sh/2pwvqd8v","slide":8,"text":"4.  Hoa len & gấu bông","textPreview":"4.  Hoa len & gấu bông","textChars":22,"textLines":1,"bbox":[770,275,240,34]}
+{"kind":"textbox","id":"sh/pc7e18rm","slide":8,"text":"5.  Hộp hoa","textPreview":"5.  Hộp hoa","textChars":11,"textLines":1,"bbox":[770,337,240,34]}
+{"kind":"textbox","id":"sh/4bexsnq1","slide":8,"text":"6.  Hoa cưới","textPreview":"6.  Hoa cưới","textChars":12,"textLines":1,"bbox":[770,399,240,34]}
+{"kind":"image","id":"im/ovu1szqd","slide":8,"name":"","geometry":"rect","alt":"Bó hoa tươi Tamas","bbox":[1022,205,178,390]}
+{"kind":"notes","id":"nt/1ni3mc","slide":8,"text":"Chọn đúng danh mục. Trên website, Hộp hoa hiển thị với tên Flower Box."}
+{"kind":"slide","id":"sl/qk83fw","slide":9,"title":"Hình ảnh sản phẩm","textShapes":5}
+{"kind":"textbox","id":"sh/w3at4vih","slide":9,"text":"Hình ảnh sản phẩm","textPreview":"Hình ảnh sản phẩm","textChars":17,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/v21sbq1w","slide":9,"text":"Một sản phẩm có từ 1 đến 5 ảnh. Ảnh đầu tiên là ảnh đại diện","textPreview":"Một sản phẩm có từ 1 đến 5 ảnh. Ảnh đầu tiên là ảnh đại diện","textChars":60,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/5sjuh0jy","slide":9,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[100,260,42,42]}
+{"kind":"textbox","id":"sh/krat8vid","slide":9,"text":"Ảnh đầu tiên — ảnh đại diện","textPreview":"Ảnh đầu tiên — ảnh đại diện","textChars":27,"textLines":1,"bbox":[74,606,450,30]}
+{"kind":"textbox","id":"sh/tw3ul0ja","slide":9,"text":"Ưu tiên ảnh rõ, đủ sáng, ảnh dọc và không có giá cũ. Không dùng screenshot Facebook hay ảnh mờ.","textPreview":"Ưu tiên ảnh rõ, đủ sáng, ảnh dọc và không có giá cũ. Không dùng screenshot Facebook hay ảnh mờ.","textChars":95,"textLines":1,"bbox":[650,536,470,65]}
+{"kind":"image","id":"im/zqx07ul8","slide":9,"name":"","geometry":"rect","alt":"Ảnh đại diện sản phẩm","bbox":[70,230,510,360]}
+{"kind":"image","id":"im/mtoj2pkj","slide":9,"name":"","geometry":"rect","alt":"Ảnh góc chụp khác","bbox":[650,230,220,260]}
+{"kind":"image","id":"im/nux0bul4","slide":9,"name":"","geometry":"rect","alt":"Ảnh góc chụp khác","bbox":[895,230,220,260]}
+{"kind":"notes","id":"nt/qk83fw","slide":9,"text":"Demo trực tiếp cách kéo ba ảnh vào. Nhắc chị ảnh đầu tiên là ảnh đại diện và giới hạn tối đa là năm ảnh."}
+{"kind":"slide","id":"sl/yp7v10","slide":10,"title":"Giá sản phẩm","textShapes":9}
+{"kind":"textbox","id":"sh/pkv29kb6","slide":10,"text":"Giá sản phẩm","textPreview":"Giá sản phẩm","textChars":12,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/2h4jy5sf","slide":10,"text":"Chọn Loại giá trước, rồi điền Giá khi cần","textPreview":"Chọn Loại giá trước, rồi điền Giá khi cần","textChars":41,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/nidk7at0","slide":10,"text":"Giá cố định","textPreview":"Giá cố định","textChars":11,"textLines":1,"bbox":[130,244,235,42]}
+{"kind":"shape","id":"sh/cnm14fah","slide":10,"bbox":[130,304,195,0]}
+{"kind":"textbox","id":"sh/x8f2dkr2","slide":10,"text":"450000\n→ 450.000đ","textPreview":"450000 | → 450.000đ","textChars":17,"textLines":2,"bbox":[130,330,220,82]}
+{"kind":"textbox","id":"sh/al4j2psr","slide":10,"text":"Giá từ","textPreview":"Giá từ","textChars":6,"textLines":1,"bbox":[440,244,235,42]}
+{"kind":"shape","id":"sh/bmdkbutw","slide":10,"bbox":[440,304,195,0]}
+{"kind":"textbox","id":"sh/kb618zat","slide":10,"text":"300000\n→ Từ 300.000đ","textPreview":"300000 | → Từ 300.000đ","textChars":20,"textLines":2,"bbox":[440,330,220,82]}
+{"kind":"textbox","id":"sh/lcf2h4re","slide":10,"text":"Liên hệ","textPreview":"Liên hệ","textChars":7,"textLines":1,"bbox":[750,244,235,42]}
+{"kind":"shape","id":"sh/x4nelc3u","slide":10,"bbox":[750,304,195,0]}
+{"kind":"textbox","id":"sh/c3uds7m9","slide":10,"text":"Không nhập giá\n→ Liên hệ","textPreview":"Không nhập giá | → Liên hệ","textChars":24,"textLines":2,"bbox":[750,330,220,82]}
+{"kind":"textbox","id":"sh/b2lwj2lo","slide":10,"text":"Chỉ nhập số. Không nhập dấu chấm, chữ “đ” hay chữ “Từ” vào ô Giá.","textPreview":"Chỉ nhập số. Không nhập dấu chấm, chữ “đ” hay chữ “Từ” vào ô Giá.","textChars":65,"textLines":1,"bbox":[130,536,800,50]}
+{"kind":"image","id":"im/d8f6hsf6","slide":10,"name":"","geometry":"rect","alt":"Hoa sáp Tamas","bbox":[1050,220,130,330]}
+{"kind":"notes","id":"nt/yp7v10","slide":10,"text":"Đưa một ví dụ thật: 450000. Nói rằng chữ đ và Từ do website tự hiển thị."}
+{"kind":"slide","id":"sl/pbmnay","slide":11,"title":"Thông tin giúp khách hiểu mẫu hoa","textShapes":8}
+{"kind":"textbox","id":"sh/radkrud8","slide":11,"text":"Thông tin giúp khách hiểu mẫu hoa","textPreview":"Thông tin giúp khách hiểu mẫu hoa","textChars":33,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/sbml0zet","slide":11,"text":"Mô tả ngắn, mô tả chi tiết, tông màu và dịp tặng","textPreview":"Mô tả ngắn, mô tả chi tiết, tông màu và dịp tặng","textChars":48,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/ed432pwj","slide":11,"text":"Mô tả ngắn","textPreview":"Mô tả ngắn","textChars":10,"textLines":1,"bbox":[540,232,390,32]}
+{"kind":"textbox","id":"sh/zedkvud4","slide":11,"text":"1 đến 3 câu, ví dụ:\nBó hoa tone hồng nhẹ nhàng, phù hợp sinh nhật và kỷ niệm.","textPreview":"1 đến 3 câu, ví dụ: | Bó hoa tone hồng nhẹ nhàng, phù hợp sinh nhật và kỷ niệm.","textChars":77,"textLines":2,"bbox":[540,275,560,72]}
+{"kind":"textbox","id":"sh/0fml4zup","slide":11,"text":"Mô tả chi tiết","textPreview":"Mô tả chi tiết","textChars":14,"textLines":1,"bbox":[540,375,390,32]}
+{"kind":"textbox","id":"sh/1gfmx4va","slide":11,"text":"Ghi thêm loại hoa, tone màu, ý nghĩa hoặc lưu ý đặt trước.","textPreview":"Ghi thêm loại hoa, tone màu, ý nghĩa hoặc lưu ý đặt trước.","textChars":58,"textLines":1,"bbox":[540,417,560,47]}
+{"kind":"textbox","id":"sh/uhk3q5wf","slide":11,"text":"Tông màu & Dịp tặng","textPreview":"Tông màu & Dịp tặng","textChars":19,"textLines":1,"bbox":[540,505,450,32]}
+{"kind":"textbox","id":"sh/vitkjad0","slide":11,"text":"Ví dụ: Hồng, Kem · Sinh nhật, Tình yêu","textPreview":"Ví dụ: Hồng, Kem · Sinh nhật, Tình yêu","textChars":38,"textLines":1,"bbox":[540,549,530,32]}
+{"kind":"image","id":"im/gvepgrqd","slide":11,"name":"","geometry":"rect","alt":"Bó hoa pastel Tamas","bbox":[70,228,390,390]}
+{"kind":"notes","id":"nt/pbmnay","slide":11,"text":"Các thông tin màu sắc và dịp tặng giúp khách tìm ở catalog và giúp sản phẩm hiện trên trang dịp tặng phù hợp."}
+{"kind":"slide","id":"sl/fvslbk","slide":12,"title":"Bật và tắt hiển thị","textShapes":7}
+{"kind":"textbox","id":"sh/yp8zqtcv","slide":12,"text":"Bật và tắt hiển thị","textPreview":"Bật và tắt hiển thị","textChars":19,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/lszyl8vm","slide":12,"text":"Đây là cách an toàn để tạm ngừng bán một sản phẩm","textPreview":"Đây là cách an toàn để tạm ngừng bán một sản phẩm","textChars":49,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"shape","id":"sh/nuh0nidc","slide":12,"bbox":[592,257,76,76]}
+{"kind":"textbox","id":"sh/mt8zudc7","slide":12,"text":"Bật","textPreview":"Bật","textChars":3,"textLines":1,"bbox":[698,267,200,36]}
+{"kind":"textbox","id":"sh/9wzip8vi","slide":12,"text":"Khách nhìn thấy trên website","textPreview":"Khách nhìn thấy trên website","textChars":28,"textLines":1,"bbox":[698,314,410,34]}
+{"kind":"shape","id":"sh/8vqhwnux","slide":12,"bbox":[592,397,530,0]}
+{"kind":"shape","id":"sh/3yxgbed8","slide":12,"bbox":[592,447,76,76]}
+{"kind":"textbox","id":"sh/2x4zi9wn","slide":12,"text":"Tắt","textPreview":"Tắt","textChars":3,"textLines":1,"bbox":[698,457,200,36]}
+{"kind":"textbox","id":"sh/8futw3at","slide":12,"text":"Sản phẩm vẫn nằm trong CMS\nnhưng khách không thấy","textPreview":"Sản phẩm vẫn nằm trong CMS | nhưng khách không thấy","textChars":49,"textLines":2,"bbox":[698,504,410,54]}
+{"kind":"textbox","id":"sh/9g3ap8be","slide":12,"text":"Hết hàng? Ưu tiên tắt hiển thị thay vì xóa.","textPreview":"Hết hàng? Ưu tiên tắt hiển thị thay vì xóa.","textChars":43,"textLines":1,"bbox":[590,612,550,32]}
+{"kind":"image","id":"im/9g7mdcv2","slide":12,"name":"","geometry":"rect","alt":"Flower Box Tamas","bbox":[74,218,390,400]}
+{"kind":"notes","id":"nt/fvslbk","slide":12,"text":"Khi tạm ngưng bán, tắt Đang hiển thị trên website rồi Publish. Cách này giữ lại dữ liệu để dùng lại sau."}
+{"kind":"slide","id":"sl/0nf4qy","slide":13,"title":"Sản phẩm nổi bật ở trang chủ","textShapes":7}
+{"kind":"textbox","id":"sh/gnm50reh","slide":13,"text":"Sản phẩm nổi bật ở trang chủ","textPreview":"Sản phẩm nổi bật ở trang chủ","textChars":28,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/fmd4rmdw","slide":13,"text":"Trang chủ có danh sách chọn riêng","textPreview":"Trang chủ có danh sách chọn riêng","textChars":33,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/pcfmxgvy","slide":13,"text":"Trong Sản phẩm","textPreview":"Trong Sản phẩm","textChars":14,"textLines":1,"bbox":[470,244,300,34]}
+{"kind":"textbox","id":"sh/ob654bed","slide":13,"text":"Ô “Sản phẩm nổi bật”\nchỉ là một đánh dấu trong sản phẩm.","textPreview":"Ô “Sản phẩm nổi bật” | chỉ là một đánh dấu trong sản phẩm.","textChars":56,"textLines":2,"bbox":[470,287,330,68]}
+{"kind":"shape","id":"sh/3ax4v6ds","slide":13,"bbox":[470,398,600,0]}
+{"kind":"textbox","id":"sh/29on21w7","slide":13,"text":"Trong Trang chủ","textPreview":"Trong Trang chủ","textChars":15,"textLines":1,"bbox":[470,440,300,34]}
+{"kind":"textbox","id":"sh/5gbmlcvu","slide":13,"text":"Mục “Sản phẩm hiển thị trên trang chủ”\nchọn riêng tối đa 3 mẫu.","textPreview":"Mục “Sản phẩm hiển thị trên trang chủ” | chọn riêng tối đa 3 mẫu.","textChars":63,"textLines":2,"bbox":[470,484,540,68]}
+{"kind":"textbox","id":"sh/4f2ls7e9","slide":13,"text":"Vì vậy, muốn đổi khu “Được yêu thích tại Tamas”, chọn trong mục Trang chủ hoặc nhờ developer hỗ trợ.","textPreview":"Vì vậy, muốn đổi khu “Được yêu thích tại Tamas”, chọn trong mục Trang chủ hoặc nhờ developer hỗ trợ.","textChars":100,"textLines":1,"bbox":[470,593,650,58]}
+{"kind":"image","id":"im/v61gvuxg","slide":13,"name":"","geometry":"rect","alt":"Hoa len Tamas","bbox":[70,218,310,400]}
+{"kind":"notes","id":"nt/0nf4qy","slide":13,"text":"Đây là điểm cần nói rõ để chị không hiểu nhầm. Đừng hứa bật Featured sẽ tự lên trang chủ."}
+{"kind":"slide","id":"sl/32ywz1","slide":14,"title":"Publish","textShapes":4}
+{"kind":"shape","id":"sh/hgvudc72","slide":14,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/wfmtk7qx","slide":14,"text":"Publish","textPreview":"Publish","textChars":7,"textLines":1,"bbox":[72,165,560,80]}
+{"kind":"textbox","id":"sh/7qtc7ip0","slide":14,"text":"Sau khi kiểm tra xong, chị nhấn Publish để lưu và đưa thông tin mới lên website.","textPreview":"Sau khi kiểm tra xong, chị nhấn Publish để lưu và đưa thông tin mới lên website.","textChars":80,"textLines":1,"bbox":[72,270,560,92]}
+{"kind":"shape","id":"sh/mpkbed8f","slide":14,"bbox":[72,424,230,68]}
+{"kind":"textbox","id":"sh/9cbu9s76","slide":14,"text":"Publish","textPreview":"Publish","textChars":7,"textLines":1,"bbox":[122,440,150,32]}
+{"kind":"textbox","id":"sh/8b2tgnql","slide":14,"text":"Thông thường website cập nhật sau vài giây.","textPreview":"Thông thường website cập nhật sau vài giây.","textChars":43,"textLines":1,"bbox":[72,532,520,32]}
+{"kind":"image","id":"im/rqx8b614","slide":14,"name":"","geometry":"rect","alt":"Ảnh hoa thật tại Tamas","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/32ywz1","slide":14,"text":"Dừng lại ở thao tác Publish. Nhắc chị chỉ cần nhấn một lần rồi chờ vài giây."}
+{"kind":"slide","id":"sl/4koxg2","slide":15,"title":"Kiểm tra sản phẩm trên website","textShapes":9}
+{"kind":"textbox","id":"sh/3apwbm1s","slide":15,"text":"Kiểm tra sản phẩm trên website","textPreview":"Kiểm tra sản phẩm trên website","textChars":30,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/4byx4r2d","slide":15,"text":"Sau Publish, luôn mở catalog và trang chi tiết để xem lại","textPreview":"Sau Publish, luôn mở catalog và trang chi tiết để xem lại","textChars":57,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/qdgf61kj","slide":15,"text":"1. Vào /san-pham","textPreview":"1. Vào /san-pham","textChars":16,"textLines":1,"bbox":[465,238,460,34]}
+{"kind":"textbox","id":"sh/repwf614","slide":15,"text":"Tìm bằng tên, màu hoặc dịp tặng.","textPreview":"Tìm bằng tên, màu hoặc dịp tặng.","textChars":32,"textLines":1,"bbox":[465,280,530,32]}
+{"kind":"textbox","id":"sh/sfyx8b29","slide":15,"text":"2. Kiểm tra danh sách","textPreview":"2. Kiểm tra danh sách","textChars":21,"textLines":1,"bbox":[465,366,460,34]}
+{"kind":"textbox","id":"sh/dgrehgju","slide":15,"text":"Ảnh đại diện · tên · giá · danh mục","textPreview":"Ảnh đại diện · tên · giá · danh mục","textChars":35,"textLines":1,"bbox":[465,408,530,32]}
+{"kind":"textbox","id":"sh/eh0fa10f","slide":15,"text":"3. Mở trang chi tiết","textPreview":"3. Mở trang chi tiết","textChars":20,"textLines":1,"bbox":[465,494,460,34]}
+{"kind":"textbox","id":"sh/fi9wj610","slide":15,"text":"Kiểm tra thêm ảnh, mô tả, tông màu và dịp tặng.","textPreview":"Kiểm tra thêm ảnh, mô tả, tông màu và dịp tặng.","textChars":47,"textLines":1,"bbox":[465,536,590,48]}
+{"kind":"textbox","id":"sh/3u5ovixg","slide":15,"text":"Website tự xử lý tìm kiếm, lọc danh mục và phân trang.","textPreview":"Website tự xử lý tìm kiếm, lọc danh mục và phân trang.","textChars":54,"textLines":1,"bbox":[70,628,900,27]}
+{"kind":"image","id":"im/43elgr25","slide":15,"name":"","geometry":"rect","alt":"Ảnh sản phẩm trên website","bbox":[70,232,300,350]}
+{"kind":"notes","id":"nt/4koxg2","slide":15,"text":"Website thực tế đã được kiểm tra ở /san-pham và /san-pham/forever-pink. Khi training, cho chị tự tìm sản phẩm vừa tạo."}
+{"kind":"slide","id":"sl/1in9rm","slide":16,"title":"Sửa, ẩn hoặc xóa sản phẩm","textShapes":9}
+{"kind":"textbox","id":"sh/4zyt0zih","slide":16,"text":"Sửa, ẩn hoặc xóa sản phẩm","textPreview":"Sửa, ẩn hoặc xóa sản phẩm","textChars":25,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/3ypsruhw","slide":16,"text":"Mọi thay đổi cần Publish lại","textPreview":"Mọi thay đổi cần Publish lại","textChars":28,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/idgbyp0b","slide":16,"text":"Sửa","textPreview":"Sửa","textChars":3,"textLines":1,"bbox":[86,255,250,44]}
+{"kind":"shape","id":"sh/hc7apkzq","slide":16,"bbox":[86,317,260,0]}
+{"kind":"textbox","id":"sh/gbetwfi5","slide":16,"text":"Mở sản phẩm\nSửa nội dung\nPublish","textPreview":"Mở sản phẩm | Sửa nội dung | Publish","textChars":32,"textLines":3,"bbox":[86,346,260,92]}
+{"kind":"textbox","id":"sh/va5snahk","slide":16,"text":"Ẩn","textPreview":"Ẩn","textChars":2,"textLines":1,"bbox":[456,255,250,44]}
+{"kind":"shape","id":"sh/u9wbu50z","slide":16,"bbox":[456,317,260,0]}
+{"kind":"textbox","id":"sh/t8nalkzu","slide":16,"text":"Tắt Đang hiển thị\nPublish\nGiữ lại dữ liệu","textPreview":"Tắt Đang hiển thị | Publish | Giữ lại dữ liệu","textChars":41,"textLines":3,"bbox":[456,346,260,92]}
+{"kind":"textbox","id":"sh/87etsfi9","slide":16,"text":"Xóa","textPreview":"Xóa","textChars":3,"textLines":1,"bbox":[826,255,250,44]}
+{"kind":"shape","id":"sh/ap0vel4r","slide":16,"bbox":[826,317,260,0]}
+{"kind":"textbox","id":"sh/vq9wn65c","slide":16,"text":"Chỉ khi chắc chắn\nDelete\nXác nhận","textPreview":"Chỉ khi chắc chắn | Delete | Xác nhận","textChars":33,"textLines":3,"bbox":[826,346,260,92]}
+{"kind":"textbox","id":"sh/n29wj650","slide":16,"text":"Ưu tiên ẩn khi hết hàng hoặc muốn tạm dừng bán.","textPreview":"Ưu tiên ẩn khi hết hàng hoặc muốn tạm dừng bán.","textChars":47,"textLines":1,"bbox":[80,648,670,28]}
+{"kind":"image","id":"im/f2dsrud4","slide":16,"name":"","geometry":"rect","alt":"Bó hoa Tamas","bbox":[84,500,230,126]}
+{"kind":"image","id":"im/eh4rypwj","slide":16,"name":"","geometry":"rect","alt":"Hoa sáp Tamas","bbox":[454,500,230,126]}
+{"kind":"image","id":"im/p8fax4v6","slide":16,"name":"","geometry":"rect","alt":"Hoa tươi Tamas","bbox":[824,500,230,126]}
+{"kind":"notes","id":"nt/1in9rm","slide":16,"text":"Xóa là thao tác cuối cùng. Luôn ưu tiên tắt Đang hiển thị trên website khi chưa chắc."}
+{"kind":"slide","id":"sl/mo5sw4","slide":17,"title":"Nếu có vấn đề","textShapes":11}
+{"kind":"textbox","id":"sh/7mlsnalw","slide":17,"text":"Nếu có vấn đề","textPreview":"Nếu có vấn đề","textChars":13,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/8nutgfmh","slide":17,"text":"Kiểm tra nhanh trước khi liên hệ developer","textPreview":"Kiểm tra nhanh trước khi liên hệ developer","textChars":42,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/tonapk3m","slide":17,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[78,215,42,42]}
+{"kind":"textbox","id":"sh/upwbi547","slide":17,"text":"Đã nhấn Publish chưa?","textPreview":"Đã nhấn Publish chưa?","textChars":21,"textLines":1,"bbox":[145,220,725,34]}
+{"kind":"shape","id":"sh/vq5srals","slide":17,"bbox":[145,273,710,0]}
+{"kind":"textbox","id":"sh/gretkfmd","slide":17,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[78,301,42,42]}
+{"kind":"textbox","id":"sh/hsnatk3y","slide":17,"text":"Đang hiển thị trên website đã bật chưa?","textPreview":"Đang hiển thị trên website đã bật chưa?","textChars":39,"textLines":1,"bbox":[145,306,725,34]}
+{"kind":"shape","id":"sh/atsr6l43","slide":17,"bbox":[145,359,710,0]}
+{"kind":"textbox","id":"sh/bu1sfq5o","slide":17,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[78,387,42,42]}
+{"kind":"textbox","id":"sh/z61s3e9s","slide":17,"text":"Có tên, Đường dẫn và ít nhất một ảnh chưa?","textPreview":"Có tên, Đường dẫn và ít nhất một ảnh chưa?","textChars":42,"textLines":1,"bbox":[145,392,725,34]}
+{"kind":"shape","id":"sh/e5sbu9sn","slide":17,"bbox":[145,445,710,0]}
+{"kind":"textbox","id":"sh/18ja54ry","slide":17,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[78,473,42,42]}
+{"kind":"textbox","id":"sh/07atwjad","slide":17,"text":"Danh mục và Dịp tặng có đúng không?","textPreview":"Danh mục và Dịp tặng có đúng không?","textChars":35,"textLines":1,"bbox":[145,478,725,34]}
+{"kind":"shape","id":"sh/rihszu9w","slide":17,"bbox":[145,531,710,0]}
+{"kind":"textbox","id":"sh/d4ja14r2","slide":17,"text":"Vẫn chưa đúng? Chụp màn hình sản phẩm trong CMS rồi gửi developer.","textPreview":"Vẫn chưa đúng? Chụp màn hình sản phẩm trong CMS rồi gửi developer.","textChars":66,"textLines":1,"bbox":[78,610,750,42]}
+{"kind":"image","id":"im/dwnq94f6","slide":17,"name":"","geometry":"rect","alt":"Bó hoa pastel Tamas","bbox":[935,210,240,390]}
+{"kind":"notes","id":"nt/mo5sw4","slide":17,"text":"Chị không cần tự xử lý phần kỹ thuật. Nếu 4 bước này không giải quyết được, gửi ảnh chụp màn hình cho developer."}
+{"kind":"slide","id":"sl/fd5ke1","slide":18,"title":"Quy trình 12 bước","textShapes":27}
+{"kind":"textbox","id":"sh/udsvahgn","slide":18,"text":"Quy trình 12 bước","textPreview":"Quy trình 12 bước","textChars":17,"textLines":1,"bbox":[70,58,820,90]}
+{"kind":"textbox","id":"sh/h0je5wfe","slide":18,"text":"Chị có thể chụp hoặc in slide này để dùng mỗi lần thêm hoa","textPreview":"Chị có thể chụp hoặc in slide này để dùng mỗi lần thêm hoa","textChars":58,"textLines":1,"bbox":[72,150,760,46]}
+{"kind":"textbox","id":"sh/wzadcryt","slide":18,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[80,231,60,28]}
+{"kind":"textbox","id":"sh/7ahwz2xw","slide":18,"text":"Mở CMS","textPreview":"Mở CMS","textChars":6,"textLines":1,"bbox":[150,233,380,28]}
+{"kind":"textbox","id":"sh/m98v6xgr","slide":18,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[80,289,60,28]}
+{"kind":"textbox","id":"sh/9cze1cf2","slide":18,"text":"Bấm Google","textPreview":"Bấm Google","textChars":10,"textLines":1,"bbox":[150,291,380,28]}
+{"kind":"textbox","id":"sh/8bqd87yh","slide":18,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[80,347,60,28]}
+{"kind":"textbox","id":"sh/r6lwb6xg","slide":18,"text":"Vào Sản phẩm","textPreview":"Vào Sản phẩm","textChars":12,"textLines":1,"bbox":[150,349,380,28]}
+{"kind":"textbox","id":"sh/65cvi1gv","slide":18,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[80,405,60,28]}
+{"kind":"textbox","id":"sh/g7apwjm1","slide":18,"text":"Chọn Create","textPreview":"Chọn Create","textChars":11,"textLines":1,"bbox":[150,407,380,28]}
+{"kind":"textbox","id":"sh/h8jq5onm","slide":18,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[80,463,60,28]}
+{"kind":"textbox","id":"sh/u587u94v","slide":18,"text":"Tên + Đường dẫn","textPreview":"Tên + Đường dẫn","textChars":15,"textLines":1,"bbox":[150,465,380,28]}
+{"kind":"textbox","id":"sh/v6h83e5g","slide":18,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[80,521,60,28]}
+{"kind":"textbox","id":"sh/83qpsjm5","slide":18,"text":"Danh mục","textPreview":"Danh mục","textChars":8,"textLines":1,"bbox":[150,523,380,28]}
+{"kind":"textbox","id":"sh/t4zq14na","slide":18,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[610,231,60,28]}
+{"kind":"textbox","id":"sh/6187q94z","slide":18,"text":"1–5 ảnh","textPreview":"1–5 ảnh","textChars":7,"textLines":1,"bbox":[680,233,380,28]}
+{"kind":"textbox","id":"sh/72h8ze5k","slide":18,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[610,289,60,28]}
+{"kind":"textbox","id":"sh/kf6poz6t","slide":18,"text":"Loại giá + giá","textPreview":"Loại giá + giá","textChars":14,"textLines":1,"bbox":[680,291,380,28]}
+{"kind":"textbox","id":"sh/lgzqx4ne","slide":18,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[610,347,60,28]}
+{"kind":"textbox","id":"sh/1k7e5wb6","slide":18,"text":"Mô tả","textPreview":"Mô tả","textChars":5,"textLines":1,"bbox":[680,349,380,28]}
+{"kind":"textbox","id":"sh/0jyxcrul","slide":18,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[610,405,60,28]}
+{"kind":"textbox","id":"sh/zypw3mt0","slide":18,"text":"Màu + dịp","textPreview":"Màu + dịp","textChars":9,"textLines":1,"bbox":[680,407,380,28]}
+{"kind":"textbox","id":"sh/exwfahcf","slide":18,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[610,463,60,28]}
+{"kind":"textbox","id":"sh/dwne1wbu","slide":18,"text":"Bật hiển thị","textPreview":"Bật hiển thị","textChars":12,"textLines":1,"bbox":[680,465,380,28]}
+{"kind":"textbox","id":"sh/cvex8ru9","slide":18,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[610,521,60,28]}
+{"kind":"textbox","id":"sh/ru5wzmto","slide":18,"text":"Publish + kiểm tra","textPreview":"Publish + kiểm tra","textChars":18,"textLines":1,"bbox":[680,523,380,28]}
+{"kind":"shape","id":"sh/qtwv6hcj","slide":18,"bbox":[80,595,1090,0]}
+{"kind":"textbox","id":"sh/xsrydgby","slide":18,"text":"Nhớ: Không cần mật khẩu Sanity riêng. Chỉ bấm Google và chọn đúng Gmail đã được mời.","textPreview":"Nhớ: Không cần mật khẩu Sanity riêng. Chỉ bấm Google và chọn đúng Gmail đã được mời.","textChars":84,"textLines":1,"bbox":[80,620,1050,34]}
+{"kind":"notes","id":"nt/fd5ke1","slide":18,"text":"Kết thúc bằng slide này. Khuyến khích chị lưu bài trình chiếu và file cheat sheet để tự xem lại."}
