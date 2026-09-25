@@ -3,7 +3,7 @@
 ## Thêm sản phẩm mới
 
 1. Truy cập `https://tamasflower.vn/admin`.
-2. Đăng nhập bằng tài khoản Sanity được mời.
+2. Chọn **Google** và đăng nhập bằng đúng Gmail đã được mời vào Sanity Project Members. Không cần tạo mật khẩu Sanity riêng.
 3. Chọn **Products**.
 4. Chọn **Create**.
 5. Nhập tên sản phẩm.
@@ -12,7 +12,7 @@
 8. Chọn loại giá.
 9. Nhập giá nếu chọn **Giá cố định** hoặc **Giá từ**. Nhập số, không dùng dấu chấm.
 10. Nhập mô tả ngắn và mô tả chi tiết.
-11. Bật **Sản phẩm nổi bật** nếu muốn đưa lên trang chủ.
+11. Chỉ bật **Sản phẩm nổi bật** khi cần đánh dấu sản phẩm. Muốn đưa lên trang chủ, chọn riêng trong mục **Trang chủ**.
 12. Giữ bật **Đang hiển thị trên website**.
 13. Nhấn **Publish**.
 
@@ -32,7 +32,7 @@ Sản phẩm vẫn còn trong trang quản lý nhưng không còn xuất hiện 
 
 ## Chọn sản phẩm nổi bật
 
-Bật **Sản phẩm nổi bật**, rồi nhấn **Publish**. Tắt mục này để bỏ sản phẩm khỏi phần nổi bật.
+Ô **Sản phẩm nổi bật** trong sản phẩm không tự đưa mẫu lên khu “Được yêu thích tại Tamas” trên trang chủ. Trang chủ đang có danh sách chọn riêng ở mục **Trang chủ → Sản phẩm hiển thị trên trang chủ**. Chỉ chỉnh phần này khi đã được hướng dẫn hoặc nhờ developer hỗ trợ.
 
 ## Xóa sản phẩm
 
