@@ -39,6 +39,7 @@
 .hero-image { background-color: var(--soft-rose); }
 .hero::after { background: linear-gradient(90deg, rgb(255 255 255 / 0.96) 0%, rgb(255 255 255 / 0.88) 31%, rgb(102 217 255 / 0.18) 56%, transparent 72%); }
 .hero-note { color: var(--paper-white); text-shadow: 0 2px 18px rgb(0 43 73 / 0.45); }
+.hero-copy > p:not(.location) { font-weight: 500; }
 
 .occasions,
 .price-guide { background: var(--soft-rose); }
