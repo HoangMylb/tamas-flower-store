@@ -15,22 +15,22 @@ const productCategories = [
 ];
 
 const tamasStudioTheme = buildLegacyTheme({
-  "--black": "#392f2b",
-  "--white": "#fffdfc",
-  "--brand-primary": "#8c3f50",
-  "--component-bg": "#fffdfc",
-  "--component-text-color": "#392f2b",
-  "--default-button-color": "#392f2b",
-  "--default-button-primary-color": "#8c3f50",
-  "--focus-color": "#8c3f50",
-  "--gray-base": "#5d514c",
-  "--gray": "#8a7c75",
-  "--main-navigation-color": "#fffaf6",
-  "--main-navigation-color--inverted": "#392f2b",
-  "--state-info-color": "#8c3f50",
-  "--state-success-color": "#77806b",
-  "--state-warning-color": "#b67a5e",
-  "--state-danger-color": "#a65f6b",
+  "--black": "#002B49",
+  "--white": "#FFFFFF",
+  "--brand-primary": "#66D9FF",
+  "--component-bg": "#FFFFFF",
+  "--component-text-color": "#002B49",
+  "--default-button-color": "#002B49",
+  "--default-button-primary-color": "#002B49",
+  "--focus-color": "#FF6F59",
+  "--gray-base": "#426278",
+  "--gray": "#6D8899",
+  "--main-navigation-color": "#FFFFFF",
+  "--main-navigation-color--inverted": "#002B49",
+  "--state-info-color": "#66D9FF",
+  "--state-success-color": "#66D9FF",
+  "--state-warning-color": "#FF6F59",
+  "--state-danger-color": "#FF6F59",
 });
 
 const vietnameseStructureLabels = defineLocaleResourceBundle({

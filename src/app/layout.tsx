@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Be_Vietnam_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import "./image-quality.css";
+import "./brand-palette.css";
 
 const display = Cormorant_Garamond({ variable: "--font-display", subsets: ["latin", "vietnamese"], weight: ["400", "500", "600", "700"] });
 const body = Be_Vietnam_Pro({ variable: "--font-body", subsets: ["latin", "vietnamese"], weight: ["400", "500", "600", "700"] });

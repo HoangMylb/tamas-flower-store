@@ -2,14 +2,14 @@
 name: Tamas Flower Store
 description: Florist Atelier — a warm, editorial storefront that turns a real bouquet into the beginning of a personal consultation.
 colors:
-  paper: "#f8f4ee"
-  paper-white: "#fffdfc"
-  ink: "#292320"
-  muted: "#756a64"
-  rose: "#a65f6b"
-  soft-rose: "#e8d4d5"
-  sage: "#77806b"
-  line: "#ddd4cc"
+  paper: "#FFFFFF"
+  paper-white: "#FFFFFF"
+  ink: "#002B49"
+  muted: "#426278"
+  rose: "#FF6F59"
+  soft-rose: "#E5F8FF"
+  sage: "#66D9FF"
+  line: "#BFEFFF"
 typography:
   display:
     fontFamily: "Cormorant Garamond, Georgia, serif"
